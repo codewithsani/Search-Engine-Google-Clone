@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  margin: 15px;
+  width: 100vw;
+  min-height: 15vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav a {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+nav #search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+nav #search input {
+  width: 90vw;
+  padding: 10px;
+  background-color: #fff;
+  margin-right: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  margin: 10px;
+}
+nav #search button {
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67/ 16%);
+  border: 1px solid rgba(24, 24, 24, 0.713);
+  outline: none;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+#container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container .result {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+#images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 10px;
+  margin-left: 20px;
+}
+#images .image {
+  width: 40vw;
+  margin: 5px;
+}
+
+#images .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    width: 100vw;
+    min-height: 15vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  nav #logo img {
+    max-width: 10vw;
+  }
+  nav #search input {
+    width: 70%;
+  }
+
+  #images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 10px;
+    margin: 0;
+  }
+  #images .image {
+    width: 15vw;
+    min-height: 15vh;
+    margin: 5px;
+  }
+}
